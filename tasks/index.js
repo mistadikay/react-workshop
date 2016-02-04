@@ -6,6 +6,7 @@ import files from 'start-files';
 
 import * as webpack from './webpack';
 import stylelint from './stylelint';
+import csscomb from './csscomb';
 
 const start = Start(logger);
 
@@ -16,6 +17,15 @@ export function lint() {
         files('**/*.css'),
         stylelint({
             formatter: 'string'
+        })
+    );
+}
+
+export function comb() {
+    return start(
+        files('**/*.css'),
+        csscomb({
+            config: 'zen'
         })
     );
 }
