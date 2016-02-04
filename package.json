@@ -26,10 +26,10 @@
     "react": "0.14.x",
     "react-dom": "0.14.x",
 
-    "start": "3.0.x",
+    "start": "3.1.x",
     "start-clean": "1.0.x",
     "start-files": "0.2.x",
-    "start-simple-logger": "1.0.x"
+    "start-simple-logger": "1.1.x"
   },
   "devDependencies": {
     "husky": "0.10.x",
