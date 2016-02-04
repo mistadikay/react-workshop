@@ -14,7 +14,7 @@
     "file-loader": "0.8.x",
     "json-loader": "0.5.x",
     "extract-text-webpack-plugin": "1.0.x",
-    "html-webpack-plugin": "2.7.x",
+    "html-webpack-plugin": "2.8.x",
 
     "babel-core": "6.4.x",
     "babel-cli": "6.4.x",
@@ -26,16 +26,17 @@
     "react": "0.14.x",
     "react-dom": "0.14.x",
 
-    "start": "2.0.x",
-    "start-clean": "0.2.x",
-    "start-simple-logger": "0.2.x"
+    "start": "3.0.x",
+    "start-clean": "1.0.x",
+    "start-files": "0.2.x",
+    "start-simple-logger": "1.0.x"
   },
   "devDependencies": {
     "husky": "0.10.x",
 
-    "start-eslint": "0.3.x",
+    "start-eslint": "1.0.x",
     "babel-eslint": ">5.0.0-beta1",
-    "eslint-plugin-babel": "3.0.x",
+    "eslint-plugin-babel": "3.1.x",
     "eslint-plugin-react": "3.16.x",
     "eslint-config-rebem": "0.3.x",
 
