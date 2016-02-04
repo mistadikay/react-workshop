@@ -30,7 +30,7 @@ export const dev = params => input => {
                     stats: statsOptions
                 });
 
-                console.log(`http://${host}:${port}/webpack-dev-server/`);
+                log(`http://${host}:${port}/webpack-dev-server/`);
 
                 server.listen(port, err => {
                     if (err) {

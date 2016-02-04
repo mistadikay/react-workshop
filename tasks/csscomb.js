@@ -6,11 +6,11 @@ export default options => input => {
         return new Promise(function(resolve, reject) {
             Promise.all(input.map(path => comb.processPath(path)))
                 .then(function() {
-                    console.log('combed');
+                    log('combed');
                     resolve();
                 })
                 .catch(function(err) {
-                    console.log(err);
+                    log(err);
                     reject();
                 });
         });

@@ -8,7 +8,7 @@ import * as webpack from './webpack';
 import stylelint from './stylelint';
 import csscomb from './csscomb';
 
-const start = Start(logger);
+const start = Start(logger());
 
 export function lint() {
     return start(
