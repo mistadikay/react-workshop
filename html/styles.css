@@ -10,7 +10,9 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     line-height: 120%;
 }
-
+.catalog {
+    min-width: 700px;
+}
 /* icons */
 .icon-svg {
     display: inline-block;
@@ -63,8 +65,6 @@ body {
 .catalog__main__content {
     position: relative;
     margin: 10px 20px;
-    min-width: 700px;
-    max-width: 985px;
 }
 
 /* title */
@@ -122,7 +122,6 @@ body {
 .catalog__status__filters .component-switcher {
     position: relative;
     display: inline-block;
-    margin-right: 30px;
 }
 .catalog__status__filters .component-switcher .switchers {
     position: relative;
