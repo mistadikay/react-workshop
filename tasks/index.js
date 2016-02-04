@@ -5,13 +5,18 @@ import eslint from 'start-eslint';
 import files from 'start-files';
 
 import * as webpack from './webpack';
+import stylelint from './stylelint';
 
 const start = Start(logger);
 
 export function lint() {
     return start(
         files('**/*.js'),
-        eslint()
+        eslint(),
+        files('**/*.css'),
+        stylelint({
+            formatter: 'string'
+        })
     );
 }
 
