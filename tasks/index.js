@@ -5,7 +5,6 @@ import eslint from 'start-eslint';
 import files from 'start-files';
 import env from 'start-env';
 import karma from 'start-karma';
-import watch from 'start-watch';
 import * as webpack from 'start-webpack';
 
 import findPort from './port';
@@ -31,14 +30,15 @@ export function test() {
     return start(
         env('test'),
         files('test/**/*.js'),
-        karma(require('../conf/karma').default)
+        karma(require('../conf/karma').build)
     );
 }
 
 export function tdd() {
     return start(
-        files([ 'src/**/*.js', 'test/**/*.js' ]),
-        watch(test)
+        env('test'),
+        files('test/**/*.js'),
+        karma(require('../conf/karma').dev)
     );
 }
 

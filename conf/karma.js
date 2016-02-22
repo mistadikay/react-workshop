@@ -1,8 +1,8 @@
 import { LOG_DISABLE } from 'karma/lib/constants';
 
-import webpackTestConfig from '../webpack/test';
+import webpackTestConfig from './webpack/test';
 
-export default {
+const karmaCommonConfig = {
     port: 3001,
     webpackPort: 3002,
     colors: true,
@@ -53,4 +53,20 @@ export default {
     browserNoActivityTimeout: 30000, // default 10 * 1000
     browserDisconnectTimeout: 10000, // default 2 * 1000
     browserDisconnectTolerance: 1 // default 0
+};
+
+export const build = {
+    ...karmaCommonConfig,
+    singleRun: true,
+    autoWatch: false
+};
+
+export const dev = {
+    ...karmaCommonConfig,
+    singleRun: false,
+    autoWatch: true,
+    reporters: [
+        'clear-screen',
+        ...karmaCommonConfig.reporters
+    ]
 };

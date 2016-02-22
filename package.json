@@ -52,7 +52,6 @@
     "react-transform-hmr": "1.0.x",
 
     "start-karma": "0.1.x",
-    "start-watch": "1.0.x",
     "react-addons-test-utils": "0.14.x",
     "babel-istanbul-loader": "0.0.x",
     "mocha": "2.4.x",
