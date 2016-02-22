@@ -2,7 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-import webpackCommonConfig from './webpack.common';
+import webpackCommonConfig from './';
 
 export default {
     ...webpackCommonConfig,

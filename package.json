@@ -49,7 +49,28 @@
     "webpack-dev-server": "1.14.x",
 
     "babel-plugin-react-transform": ">=2.0.0-beta1",
-    "react-transform-hmr": "1.0.x"
+    "react-transform-hmr": "1.0.x",
+
+    "start-karma": "0.1.x",
+    "start-watch": "1.0.x",
+    "react-addons-test-utils": "0.14.x",
+    "babel-istanbul-loader": "0.0.x",
+    "mocha": "2.4.x",
+    "enzyme": "2.0.x",
+    "chai": "3.5.x",
+    "chai-spies": "0.7.x",
+    "chai-bem": "1.3.x",
+    "chai-colors": "1.0.x",
+    "chai-as-promised": "5.2.x",
+    "chai-enzyme": "0.4.x",
+    "bem-naming": "0.5.x",
+    "karma": "0.13.x",
+    "karma-mocha": "0.2.x",
+    "karma-mocha-reporter": "1.2.x",
+    "karma-firefox-launcher": "0.1.x",
+    "karma-webpack": "1.7.x",
+    "karma-coverage": "0.5.x",
+    "karma-clear-screen-reporter": "1.0.x"
   },
   "scripts": {
     "start": "start-runner ./tasks/index.js",

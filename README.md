@@ -7,14 +7,18 @@ These are materials for React Workshop after which you will be able to create an
 
 ```
 .
-├── /build                    # production build (`npm start build`)
+├── /build                    # production build
 │
 ├── /conf                     # configuration files
-│   ├── /karma.js             # Karma test runner config
-│   ├── /webpack.common.js    # Webpack common config
-│   ├── /webpack.build.js     # -- for static build
-│   ├── /webpack.dev.js       # -- for dev mode (`npm start dev`)
-│   └── /webpack.test.js      # -- for running tests (`npm start tdd`)
+│   ├── /karma                # Karma test runner configs
+│   │   ├── /index.js  		  # -- common
+│   │   ├── /dev              # -- for TDD (`npm start tdd`)
+│   │   └── /build       	  # -- for one-time tests run (`npm start test`)
+│   └── /webpack	  	      # Webpack common config
+│   	├── /index.js     	  # -- common
+│   	├── /build.js     	  # -- for static build (`npm start build`)
+│   	├── /dev.js       	  # -- for dev mode (`npm start dev`)
+│   	└── /test.js	      # -- for running tests
 │
 ├── /html                     # Static assets you will use as a basis for your React application
 │
@@ -105,7 +109,7 @@ There are three parts, and each one them is a theory followed by a practical tas
 	* container components
 	* Flux
 	* Redux
-    
+
 ### What about immutability, GraphQL, Relay, server-side rendering?
 
 The purpose of this workshop is to give you the basics and make you comfortable in the growing React ecosystem. You can then jump to the hardcore stuff yourself if you want.

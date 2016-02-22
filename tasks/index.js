@@ -4,6 +4,8 @@ import clean from 'start-clean';
 import eslint from 'start-eslint';
 import files from 'start-files';
 import env from 'start-env';
+import karma from 'start-karma';
+import watch from 'start-watch';
 import * as webpack from 'start-webpack';
 
 import findPort from './port';
@@ -25,6 +27,21 @@ export function lint() {
     );
 }
 
+export function test() {
+    return start(
+        env('test'),
+        files('test/**/*.js'),
+        karma(require('../conf/karma').default)
+    );
+}
+
+export function tdd() {
+    return start(
+        files([ 'src/**/*.js', 'test/**/*.js' ]),
+        watch(test)
+    );
+}
+
 export function comb() {
     return start(
         files('**/*.css'),
@@ -39,7 +56,7 @@ export function build() {
         env('production'),
         files('build/'),
         clean(),
-        webpack.build(require('../conf/webpack.build').default)
+        webpack.build(require('../conf/webpack/build').default)
     );
 }
 
@@ -47,7 +64,7 @@ export function dev() {
     return start(
         env('development'),
         findPort({ minPort, maxPort }, port => start(
-            webpack.dev(require('../conf/webpack.dev').default, port)
+            webpack.dev(require('../conf/webpack/dev').default, port)
         ))
     );
 }

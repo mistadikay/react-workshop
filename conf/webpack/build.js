@@ -3,7 +3,7 @@ import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-import webpackCommonConfig from './webpack.common';
+import webpackCommonConfig from './';
 
 export default {
     ...webpackCommonConfig,
