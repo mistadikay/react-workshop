@@ -1,5 +1,5 @@
 import Start from 'start';
-import logger from 'start-simple-logger';
+import reporter from 'start-pretty-reporter';
 import clean from 'start-clean';
 import eslint from 'start-eslint';
 import files from 'start-files';
@@ -8,7 +8,7 @@ import * as webpack from './webpack';
 import stylelint from './stylelint';
 import csscomb from './csscomb';
 
-const start = Start(logger());
+const start = Start(reporter());
 
 export function lint() {
     return start(
