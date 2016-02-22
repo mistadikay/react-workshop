@@ -15,7 +15,7 @@ These are materials for React Workshop after which you will be able to create an
 │   	├── /index.js     	  # -- common
 │   	├── /build.js     	  # -- for static build (`npm start build`)
 │   	├── /dev.js       	  # -- for dev mode (`npm start dev`)
-│   	└── /test.js	      # -- for running tests
+│   	└── /test.js     	  # -- for running tests
 │
 ├── /html                     # Static assets you will use as a basis for your React application
 │
@@ -61,7 +61,7 @@ npm start lint
 
 ### tdd
 
-Run [Karma](https://karma-runner.github.io) server with your tests, autopdated on every change. Tests are powered by [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/), [Enzyme](https://github.com/airbnb/enzyme) and a bunch of plugins.
+Run [Karma](https://karma-runner.github.io) server with your tests, autoupdated on every change. Tests are powered by [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/), [Enzyme](https://github.com/airbnb/enzyme) and a bunch of plugins.
 
 ```shell
 npm start tdd
@@ -119,6 +119,6 @@ We will not concentrate on tooling much, because it will make this workshop too 
 
 Of course not. If something works fine and there is no business value in rewriting/refactoring it, you don't have to.
 
-You might want to consider using React for the new projects or for existing ones if you're sure there is a business value in it. What I hope this workshop will give you, apart from the technical knowledge, is understanding when and why using React is good for business.
+You might want to consider using React for the new projects or for existing ones if you're sure there is a business value in it. What I hope this workshop will give you, apart from the technical knowledge, is understanding when and why using React is a good idea.
 
 Though, to be fare, chosing React is usually *[a Business Decision, Not a Technology Choice](https://blog.formidable.com/using-react-is-a-business-decision-not-a-technology-choice-63c4641c5f7#.hen0dop4v)*.
