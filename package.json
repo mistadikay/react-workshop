@@ -30,6 +30,8 @@
     "start-babel-cli": "1.0.x",
     "start-clean": "1.0.x",
     "start-files": "0.2.x",
+    "start-env": "0.1.x",
+    "start-webpack": "0.1.x",
     "start-pretty-reporter": "0.2.x"
   },
   "devDependencies": {
