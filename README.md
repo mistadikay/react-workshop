@@ -59,6 +59,14 @@ npm start build
 npm start lint
 ```
 
+### comb
+
+Format you styles with [CSScomb](http://www.csscomb.com/)
+
+```shell
+npm start comb
+```
+
 ### tdd
 
 Run [Karma](https://karma-runner.github.io) server with your tests, autoupdated on every change. Tests are powered by [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/), [Enzyme](https://github.com/airbnb/enzyme) and a bunch of plugins.
