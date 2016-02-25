@@ -168,6 +168,7 @@ body {
 }
 .product_list.grid {
     display: flex;
+    flex-flow: row wrap;
 }
 .product_list.list {
     display: block;
