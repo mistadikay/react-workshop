@@ -6,6 +6,7 @@
   rules:
     "react/jsx-uses-react": 2
     "react/jsx-uses-vars": 2
+    "no-magic-numbers": 0
     wrap-iife:
       - 2
       - inside
