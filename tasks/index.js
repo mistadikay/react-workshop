@@ -19,7 +19,7 @@ export function lint() {
     return start(
         files('**/*.js'),
         eslint(),
-        files('**/*.css'),
+        files('**/*.css', { ignore: [ 'node_modules/**', 'coverage/**' ] }),
         stylelint({
             formatter: 'string'
         })
