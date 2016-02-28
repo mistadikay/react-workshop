@@ -19,7 +19,7 @@ export function lint() {
     return start(
         files('**/*.js'),
         eslint(),
-        files('**/*.css', { ignore: [ 'node_modules/**', 'coverage/**' ] }),
+        files([ 'src/**/*.css', 'html/**/*.css' ]),
         stylelint({
             formatter: 'string'
         })
@@ -44,7 +44,7 @@ export function tdd() {
 
 export function comb() {
     return start(
-        files('**/*.css'),
+        files([ 'src/**/*.css', 'html/**/*.css' ]),
         csscomb({
             config: 'zen'
         })
