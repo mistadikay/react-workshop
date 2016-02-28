@@ -15,8 +15,8 @@ body {
 }
 .catalog.is-loading {
     padding: 50px;
-    font-size: 20px;
     text-align: center;
+    font-size: 20px;
 }
 /* icons */
 .icon-svg {
@@ -173,6 +173,7 @@ body {
 }
 .product_list.grid {
     display: flex;
+
     flex-flow: row wrap;
 }
 .product_list.list {
