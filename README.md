@@ -11,11 +11,11 @@ These are materials for React Workshop after which you will be able to create an
 │
 ├── /conf                     # configuration files
 │   ├── /karma.js             # Karma test runner config
-│   └── /webpack	  	      # Webpack common config
-│   	├── /index.js     	  # -- common
-│   	├── /build.js     	  # -- for static build (`npm start build`)
-│   	├── /dev.js       	  # -- for dev mode (`npm start dev`)
-│   	└── /test.js     	  # -- for running tests
+│   └── /webpack              # Webpack common config
+│   	├── /index.js         # -- common
+│   	├── /build.js         # -- for static build (`npm start build`)
+│   	├── /dev.js           # -- for dev mode (`npm start dev`)
+│   	└── /test.js          # -- for running tests
 │
 ├── /html                     # Static assets you will use as a basis for your React application
 │
@@ -95,33 +95,32 @@ You don't have to know anything about React itself, but you may want to visit [o
 
 There are three parts, and each one them is a theory followed by a practical task:
 
-1. React basics
-	* why React is a game changer in UI-development
-    * render and jsx
-    * components
-    * lifecycle methods
-	* controlled/uncontrolled components
-	* propTypes
-	* context
-	* dynamic children
-	* basic testing
-2. Styles isolation
-	* inline styles
-    * css-modules
-    * BEM
-3. Data management
-	* root component's state
-	* container components
-	* Flux
-	* Redux
+#### 1. React: up and running
 
-### What about immutability, GraphQL, Relay, server-side rendering?
+*Theory:* **Time To React. Why React is a game changer in UI-development** — I will tell you why React is such a huge step forward and then give you the basic idea of how it works.
+
+*Practice:* **Create basic React application** — we'll use static assets from `html` folder to turn them into a small React-application. 
+
+
+#### 2. Style isolation and testing
+
+*Theory:* **React ♥️ BEM. Using BEM in React ecosystem** — I'll give you the overview of style isolating in React applications including css-modules, inline-styles and BEM. Then I'll tell you why we chose BEM and how we work with it in React.
+
+*Practice:* **Refactor styles and write some tests** — we'll refactor styles from the application we built in the first part with BEM and then write a couple of tests for our React components.
+
+#### 3. Data management
+
+*Theory:* **Go With The Flow. An Introduction to data management in React applications** — we will discuss how you can manage the data in your React applications depending on your needs, the size of the app, etc.
+
+*Practice:* **Use Redux for application state** — we'll add Redux into our application, try some Redux middleware, divide some components into container and presentational and wrap it up with some performance optimization techniques.
+
+### What about GraphQL, Relay, server-side rendering?
 
 The purpose of this workshop is to give you the basics and make you comfortable in the growing React ecosystem. You can then jump to the hardcore stuff yourself if you want.
 
 ### What about tooling (Babel, Webpack, Karma, etc.)?
 
-We will not concentrate on tooling much, because it will make this workshop too complicated. All tooling for this workshop is already preconfigured, so you can jump straight to the coding and not worry about anything else.
+We will not concentrate on tooling much, because it will make this workshop too complicated. Everything would be already preconfigured, so you can jump straight to the coding and not worry about anything else.
 
 ### Should I go and rewrite everything with React after this workshop?
 
