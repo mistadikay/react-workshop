@@ -97,22 +97,34 @@ There are three parts, and each one them is a theory followed by a practical tas
 
 #### 1. React: up and running
 
-*Theory:* **Time To React. Why React is a game changer in UI-development** — I will tell you why React is such a huge step forward and then give you the basic idea of how it works.
+**Theory:** *Time To React. Why React is a game changer in UI-development*
 
-*Practice:* **Create basic React application** — we'll use static assets from `html` folder to turn them into a small React-application. 
+I will tell you why React is such a huge step forward and then give you the basic idea of how it works.
+
+**Practice:** *Create basic React application*
+
+We'll use static assets from `html` folder to turn them into a small React-application. 
 
 
 #### 2. Style isolation and testing
 
-*Theory:* **React ♥️ BEM. Using BEM in React ecosystem** — I'll give you the overview of style isolating in React applications including css-modules, inline-styles and BEM. Then I'll tell you why we chose BEM and how we work with it in React.
+**Theory:** *React ♥️ BEM. Using BEM in React ecosystem*
 
-*Practice:* **Refactor styles and write some tests** — we'll refactor styles from the application we built in the first part with BEM and then write a couple of tests for our React components.
+I'll give you the overview of style isolating in React applications including css-modules, inline-styles and BEM. Then I'll tell you why we chose BEM and how we work with it in React.
+
+**Practice:** *Refactor styles and write some tests*
+
+We'll refactor styles from the application we built in the first part with BEM and then write a couple of tests for our React components.
 
 #### 3. Data management
 
-*Theory:* **Go With The Flow. An Introduction to data management in React applications** — we will discuss how you can manage the data in your React applications depending on your needs, the size of the app, etc.
+**Theory:** *Go With The Flow. An Introduction to data management in React applications*
 
-*Practice:* **Use Redux for application state** — we'll add Redux into our application, try some Redux middleware, divide some components into container and presentational and wrap it up with some performance optimization techniques.
+We will discuss how you can manage the data in your React applications depending on your needs, the size of the app, etc.
+
+**Practice:** *Use Redux for application state*
+
+We'll add Redux into our application, try some Redux middleware, divide some components into container and presentational and wrap it up with some performance optimization techniques.
 
 ### What about GraphQL, Relay, server-side rendering?
 
