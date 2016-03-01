@@ -48,8 +48,7 @@
     "portscanner": "1.0.x",
     "webpack-dev-server": "1.14.x",
 
-    "babel-plugin-react-transform": ">=2.0.0-beta1",
-    "react-transform-hmr": "1.0.x",
+    "babel-preset-react-hmre": "1.1.x",
 
     "start-karma": "0.1.x",
     "react-addons-test-utils": "0.14.x",
