@@ -72,8 +72,7 @@
   },
   "scripts": {
     "start": "start-runner ./tasks/index.js",
-    "test": "npm start lint",
-    "precommit": "npm test"
+    "precommit": "npm start lint"
   },
   "engines": {
     "node": ">=0.12",
