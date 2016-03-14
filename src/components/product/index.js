@@ -2,6 +2,7 @@ import React from 'react';
 
 import ProductRating from '~/components/product-rating';
 import BuyButton from '~/components/button-buy';
+import Price from '~/components/price';
 
 export default class extends React.Component {
     render() {
@@ -17,11 +18,7 @@ export default class extends React.Component {
                                 <span className="product-card__name">USB Sandisk Cruzer Edge CZ52 16GB (Đen phối đỏ)</span>
                             </div>
                             <div className="price-block--grid">
-                                <div className="product-card__price">88.000 VND</div>
-                                <div className="product-card__sale">- 51%</div>
-                                <div className="old-price-wrap">
-                                    <div className="product-card__old-price">179.000 VND</div>
-                                </div>
+                                <Price />
                                 <ProductRating />
                                 <BuyButton>BUY NOW</BuyButton>
                             </div>
@@ -39,12 +36,7 @@ export default class extends React.Component {
                     </div>
                     <div className="product-card__description">
                         <div className="price-block--list">
-                            <div className="product-card__price">1.673.000 VND</div>
-                            <div className="product-card__sale">- 16%</div>
-                            <div className="product-card-info__fast-delivery-icon">
-                                <i className="icon icon-express-shipping"></i>
-                            </div>
-                            <div className="product-card__old-price">1.990.000 VND</div>
+                            <Price />
                             <BuyButton>BUY NOW</BuyButton>
                         </div>
                         <div className="product-card__name-wrap">
