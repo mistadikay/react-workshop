@@ -66,7 +66,7 @@ export default class extends React.Component {
                                                     <span className="icon-svg product-card__rating__icon-star-grey"></span>
                                                     <span className="icon-svg product-card__rating__icon-star-grey"></span>
                                                 </div>
-                                                <div style="width:78.364%">
+                                                <div style={{ width: '78.364%' }}>
                                                     <span className="icon-svg product-card__rating__icon-star-orange"></span>
                                                     <span className="icon-svg product-card__rating__icon-star-orange"></span>
                                                     <span className="icon-svg product-card__rating__icon-star-orange"></span>
@@ -148,7 +148,7 @@ export default class extends React.Component {
                                                 <span className="icon-svg product-card__rating__icon-star-grey"></span>
                                                 <span className="icon-svg product-card__rating__icon-star-grey"></span>
                                             </div>
-                                            <div style="width:68.334%">
+                                            <div style={{ width: '68.334%' }}>
                                                 <span className="icon-svg product-card__rating__icon-star-orange"></span>
                                                 <span className="icon-svg product-card__rating__icon-star-orange"></span>
                                                 <span className="icon-svg product-card__rating__icon-star-orange"></span>
