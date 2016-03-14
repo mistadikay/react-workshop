@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ProductRating from '~/components/product-rating';
+
 export default class extends React.Component {
     render() {
         if (this.props.view === 'grid') {
@@ -19,25 +21,7 @@ export default class extends React.Component {
                                 <div className="old-price-wrap">
                                     <div className="product-card__old-price">179.000 VND</div>
                                 </div>
-                                <div className="product-card__rating">
-                                    <div className="product-card__rating__stars" title="3.9182" alt="3.9182">
-                                        <div>
-                                            <span className="icon-svg product-card__rating__icon-star-grey"></span>
-                                            <span className="icon-svg product-card__rating__icon-star-grey"></span>
-                                            <span className="icon-svg product-card__rating__icon-star-grey"></span>
-                                            <span className="icon-svg product-card__rating__icon-star-grey"></span>
-                                            <span className="icon-svg product-card__rating__icon-star-grey"></span>
-                                        </div>
-                                        <div style={{ width: '78.364%' }}>
-                                            <span className="icon-svg product-card__rating__icon-star-orange"></span>
-                                            <span className="icon-svg product-card__rating__icon-star-orange"></span>
-                                            <span className="icon-svg product-card__rating__icon-star-orange"></span>
-                                            <span className="icon-svg product-card__rating__icon-star-orange"></span>
-                                            <span className="icon-svg product-card__rating__icon-star-orange"></span>
-                                        </div>
-                                    </div>
-                                    <span className="rating__number">(159 reviews)</span>
-                                </div>
+                                <ProductRating />
                                 <div className="button-buy product-card__button-buy">
                                     <div className="button-buy__text">BUY NOW</div>
                                 </div>
@@ -69,25 +53,7 @@ export default class extends React.Component {
                         <div className="product-card__name-wrap">
                             <span title="Ổ cứng di động WD Elements 1.5TB (Đen)" className="product-card__name">Ổ cứng di động WD Elements 1.5TB (Đen)</span>
                         </div>
-                        <div className="product-card__rating">
-                            <div className="product-card__rating__stars" title="3.4167" alt="3.4167">
-                                <div>
-                                    <span className="icon-svg product-card__rating__icon-star-grey"></span>
-                                    <span className="icon-svg product-card__rating__icon-star-grey"></span>
-                                    <span className="icon-svg product-card__rating__icon-star-grey"></span>
-                                    <span className="icon-svg product-card__rating__icon-star-grey"></span>
-                                    <span className="icon-svg product-card__rating__icon-star-grey"></span>
-                                </div>
-                                <div style={{ width: '68.334%' }}>
-                                    <span className="icon-svg product-card__rating__icon-star-orange"></span>
-                                    <span className="icon-svg product-card__rating__icon-star-orange"></span>
-                                    <span className="icon-svg product-card__rating__icon-star-orange"></span>
-                                    <span className="icon-svg product-card__rating__icon-star-orange"></span>
-                                    <span className="icon-svg product-card__rating__icon-star-orange"></span>
-                                </div>
-                            </div>
-                            <span className="rating__number">(12 reviews)</span>
-                        </div>
+                        <ProductRating />
                         <div className="product-card__describtion--full">
                             <ul className="prd-attributesList">
                                 <li><span>Ổ cứng di động</span></li>
