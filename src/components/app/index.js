@@ -4,6 +4,7 @@ import './styles.css';
 import Search from '~/components/search';
 import ViewSwitcher from '~/components/view-switcher';
 import ProductList from '~/components/product-list';
+import Filter from '~/components/filter';
 
 export default class extends React.Component {
     render() {
@@ -19,15 +20,7 @@ export default class extends React.Component {
                             </div>
                         </div>
                         <div className="catalog__status__filters">
-                            <span className="catalog__status__filters__title">Sort by:</span>
-                            <select className="component-dropdown">
-                                <option value="price-desc">Price: High to Low</option>
-                                <option value="price-asc">Price: Low to High</option>
-                                <option value="rating-desc">Rating: High to Low</option>
-                                <option value="rating-asc">Rating: Low to High</option>
-                                <option value="discount-desc">Discount: Hight to Low</option>
-                                <option value="discount-asc">Discount: Low to High</option>
-                            </select>
+                            <Filter />
                             <ViewSwitcher view="grid" />
                         </div>
                     </div>
@@ -42,15 +35,7 @@ export default class extends React.Component {
                             </div>
                         </div>
                         <div className="catalog__status__filters">
-                            <span className="catalog__status__filters__title">Sort by:</span>
-                            <select className="component-dropdown">
-                                <option value="price-desc">Price: High to Low</option>
-                                <option value="price-asc">Price: Low to High</option>
-                                <option value="rating-desc">Rating: High to Low</option>
-                                <option value="rating-asc">Rating: Low to High</option>
-                                <option value="discount-desc">Discount: Hight to Low</option>
-                                <option value="discount-asc">Discount: Low to High</option>
-                            </select>
+                            <Filter />
                             <ViewSwitcher view="list" />
                         </div>
                     </div>
