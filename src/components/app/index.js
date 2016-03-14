@@ -1,13 +1,13 @@
 import React from 'react';
 import './styles.css';
 
+import Search from '~/components/search';
+
 export default class extends React.Component {
     render() {
         return (
             <div className="catalog">
-                <div className="header__search">
-                    <input className="header__search-input" type="search" placeholder="Search in the products list" />
-                </div>
+                <Search />
                 <div className="catalog__main__content">
                     <div className="catalog__status">
                         <div className="catalog__status__title">
