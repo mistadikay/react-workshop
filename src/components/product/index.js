@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ProductRating from '~/components/product-rating';
+import BuyButton from '~/components/button-buy';
 
 export default class extends React.Component {
     render() {
@@ -22,9 +23,7 @@ export default class extends React.Component {
                                     <div className="product-card__old-price">179.000 VND</div>
                                 </div>
                                 <ProductRating />
-                                <div className="button-buy product-card__button-buy">
-                                    <div className="button-buy__text">BUY NOW</div>
-                                </div>
+                                <BuyButton>BUY NOW</BuyButton>
                             </div>
                         </div>
                     </a>
@@ -46,9 +45,7 @@ export default class extends React.Component {
                                 <i className="icon icon-express-shipping"></i>
                             </div>
                             <div className="product-card__old-price">1.990.000 VND</div>
-                            <div className="button-buy product-card__button-buy">
-                                <span className="button-buy__text">BUY NOW</span>
-                            </div>
+                            <BuyButton>BUY NOW</BuyButton>
                         </div>
                         <div className="product-card__name-wrap">
                             <span title="Ổ cứng di động WD Elements 1.5TB (Đen)" className="product-card__name">Ổ cứng di động WD Elements 1.5TB (Đen)</span>
