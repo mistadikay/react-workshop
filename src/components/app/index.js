@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.css';
 
 import Search from '~/components/search';
+import ViewSwitcher from '~/components/view-switcher'
 
 export default class extends React.Component {
     render() {
@@ -26,19 +27,7 @@ export default class extends React.Component {
                                 <option value="discount-desc">Discount: Hight to Low</option>
                                 <option value="discount-asc">Discount: Low to High</option>
                             </select>
-                            <div className="component-switcher">
-                                <span>View</span>
-                                <div className="switchers">
-                                    <a href="http://www.lazada.vn/may-vi-tinh-laptop/?viewType=gridView" className="switcher selected">
-                                        <i className="icon-svg catalog--view-grid"></i>
-                                        Grid
-                                    </a>
-                                    <a href="http://www.lazada.vn/may-vi-tinh-laptop/?viewType=listView" className="switcher">
-                                        <i className="icon-svg catalog--view-list"></i>
-                                        List
-                                    </a>
-                                </div>
-                            </div>
+                            <ViewSwitcher view="grid" />
                         </div>
                     </div>
                     <div className="product_list grid">
@@ -103,19 +92,7 @@ export default class extends React.Component {
                                 <option value="discount-desc">Discount: Hight to Low</option>
                                 <option value="discount-asc">Discount: Low to High</option>
                             </select>
-                            <div className="component-switcher">
-                                <span>View</span>
-                                <div className="switchers">
-                                    <a href="http://www.lazada.vn/may-vi-tinh-laptop/?viewType=gridView" className="switcher">
-                                        <i className="icon-svg catalog--view-grid"></i>
-                                        Grid
-                                    </a>
-                                    <a href="http://www.lazada.vn/may-vi-tinh-laptop/?viewType=listView" className="switcher selected">
-                                        <i className="icon-svg catalog--view-list"></i>
-                                        List
-                                    </a>
-                                </div>
-                            </div>
+                            <ViewSwitcher view="list" />
                         </div>
                     </div>
                     <div className="product_list list">
