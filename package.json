@@ -14,7 +14,7 @@
     "file-loader": "0.8.x",
     "json-loader": "0.5.x",
     "extract-text-webpack-plugin": "1.0.x",
-    "html-webpack-plugin": "2.9.x",
+    "html-webpack-plugin": "2.10.x",
 
     "babel-core": "6.7.x",
     "babel-cli": "6.6.x",
@@ -41,8 +41,8 @@
     "babel-eslint": ">5.0.0-beta1",
     "eslint-plugin-babel": "3.1.x",
     "eslint-plugin-react": "4.2.x",
-    "eslint-config-rebem": ">=1.0.0-beta.1",
-    "stylelint": "4.5.x",
+    "eslint-config-rebem": "1.0.x",
+    "stylelint": "5.0.x",
     "csscomb": "3.1.x",
 
     "portscanner": "1.0.x",
@@ -54,7 +54,7 @@
     "react-addons-test-utils": "0.14.x",
     "babel-istanbul-loader": "0.1.x",
     "mocha": "2.4.x",
-    "enzyme": "2.0.x",
+    "enzyme": "2.1.x",
     "chai": "3.5.x",
     "chai-spies": "0.7.x",
     "chai-bem": "1.3.x",
