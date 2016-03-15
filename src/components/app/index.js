@@ -6,6 +6,7 @@ import requestData from '~/../server';
 import Search from '~/components/search';
 import ViewSwitcher from '~/components/view-switcher';
 import ProductList from '~/components/product-list';
+import CatalogStatus from '~/components/catalog-status';
 
 // a little helper to retrieve category name from server data
 function getCategoryName(data) {
@@ -60,21 +61,13 @@ export default class App extends React.Component {
             <div className="catalog">
                 <Search placeholder="Search in the products list" />
                 <div className="catalog__main__content">
-                    <div className="catalog__status">
-                        <div className="catalog__status__title">
-                            <div className="component component-catalog_title">
-                                <h1 className="catalog__title">{this.state.title}</h1>
-                                <span className="catalog__quantity">{this.state.productCount} results</span>
-                            </div>
-                        </div>
-                        <div className="catalog__status__filters">
-                            <ViewSwitcher
-                                selected={this.state.selectedView}
-                                items={this.state.views}
-                                onChange={this.handleViewChange}
-                                />
-                        </div>
-                    </div>
+                    <CatalogStatus title={this.state.title} productCount={this.state.productCount}>
+                        <ViewSwitcher
+                            selected={this.state.selectedView}
+                            items={this.state.views}
+                            onChange={this.handleViewChange}
+                            />
+                    </CatalogStatus>
                     <ProductList view={this.state.selectedView} data={this.state.data} />
                 </div>
             </div>
