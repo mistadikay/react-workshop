@@ -20,6 +20,25 @@ export default {
         preLoaders: [
             {
                 test: /\.js$/,
+                loader: 'rebem-layers',
+                query: {
+                    layers: [
+                        {
+                            path: path.resolve('src/components/'),
+                            files: {
+                                main: 'index.js',
+                                styles: 'styles.css'
+                            }
+                        }
+                    ],
+                    importFactory: false,
+                    consumers: [
+                        path.resolve('src/')
+                    ]
+                }
+            },
+            {
+                test: /\.js$/,
                 exclude: [
                     path.resolve('node_modules/')
                 ],
