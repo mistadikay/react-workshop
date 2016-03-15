@@ -1,5 +1,6 @@
 {
   "presets": [ "es2015", "stage-1", "react" ],
+  "plugins": [ "transform-rebem-jsx" ],
   "env": {
     "development": {
       "presets": ["react-hmre"]
