@@ -16,6 +16,12 @@ export default class extends React.Component {
         };
     }
 
+    handleViewChange = view => {
+        this.setState({
+            selectedView: view
+        });
+    }
+
     render() {
         return (
             <div className="catalog">
@@ -30,7 +36,11 @@ export default class extends React.Component {
                         </div>
                         <div className="catalog__status__filters">
                             <Filter />
-                            <ViewSwitcher selected={this.state.selectedView} items={this.state.views} />
+                            <ViewSwitcher
+                                selected={this.state.selectedView}
+                                items={this.state.views}
+                                onChange={this.handleViewChange}
+                                />
                         </div>
                     </div>
                     <ProductList view={this.state.selectedView} />
