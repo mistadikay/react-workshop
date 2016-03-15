@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.css';
 
+import requestData from '~/../server';
+
 import Search from '~/components/search';
 import ViewSwitcher from '~/components/view-switcher';
 import ProductList from '~/components/product-list';
@@ -11,12 +13,26 @@ export default class extends React.Component {
         super(props);
 
         this.state = {
+            // initial data is null
+            data: null,
             title: 'Computers &amp; Laptops',
             productCount: 18560,
             views: [ 'grid', 'list' ],
             selectedView: 'grid'
         };
     }
+
+    // let's pretend it's from the server
+    componentDidMount() {
+        requestData(1500).then(this.updateData);
+    }
+
+    // when data from the server is loaded, update local state
+    updateData = data => {
+        this.setState({
+            data
+        });
+    };
 
     handleViewChange = view => {
         this.setState({
