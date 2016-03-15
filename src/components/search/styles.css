@@ -3,16 +3,20 @@
     background: #c01f25;
 }
 .search__input {
+    width: 100%;
+}
+.search__input:focus {
+    border-color: #f37022;
+}
+.search__input .input__control {
     display: block;
     padding: 0 10px 0 5px;
     width: 100%;
     height: 39px;
-    outline: 0;
+    background: #fff;
     border: 1px solid rgba(0, 0, 0, 0);
     font-size: 1.2em;
-
-    -webkit-appearance: none;
 }
-.search__input:focus {
+.search__input .input__control:focus {
     border-color: #f37022;
 }
