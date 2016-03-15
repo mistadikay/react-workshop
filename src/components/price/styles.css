@@ -16,16 +16,6 @@
     color: #fff;
     text-transform: uppercase;
 }
-.grid .price__discount {
-    position: absolute;
-    top: 291px;
-    right: 57px;
-}
-.grid .price__old-value-wrapper {
-    display: block;
-    height: 18px;
-    text-align: left;
-}
 .price__old-value {
     position: relative;
     display: inline-block;
@@ -33,7 +23,4 @@
     text-decoration: line-through;
     text-transform: uppercase;
     white-space: nowrap;
-}
-.list .price__old-value {
-    top: -6px;
 }

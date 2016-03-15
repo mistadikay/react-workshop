@@ -3,6 +3,7 @@ import React from 'react';
 import ProductRating from '~/components/product-rating';
 import BuyButton from '~/components/button-buy';
 import Price from '~/components/price';
+import './styles.css';
 
 export default class Product extends React.Component {
     renderName(name) {
@@ -20,6 +21,13 @@ export default class Product extends React.Component {
                 <div className="product-card__description">
                     <div className="price-block--list">
                         <Price
+                            mix={{
+                                block: 'product',
+                                elem: 'price',
+                                mods: {
+                                    view: this.props.view
+                                }
+                            }}
                             value={product.data.price}
                             discount={product.data.special_price}
                             discountPercentage={product.data.max_saving_percentage}
@@ -48,6 +56,13 @@ export default class Product extends React.Component {
                 {this.renderName(product.data.name)}
                 <div className="price-block--grid">
                     <Price
+                        mix={{
+                            block: 'product',
+                            elem: 'price',
+                            mods: {
+                                view: this.props.view
+                            }
+                        }}
                         value={product.data.price}
                         discount={product.data.special_price}
                         discountPercentage={product.data.max_saving_percentage}

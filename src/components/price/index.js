@@ -17,7 +17,7 @@ export default function Price(props) {
 
         if (discount !== value) {
             return (
-                <div block="price">
+                <div block="price" mix={props.mix}>
                     <div block="price" elem="value">
                         {composePrice(discount, props.currency)}
                     </div>
@@ -35,7 +35,7 @@ export default function Price(props) {
     }
 
     return (
-        <div block="price">
+        <div block="price" mix={props.mix}>
             <div block="price" elem="value">{composePrice(value, props.currency)}</div>
         </div>
     );

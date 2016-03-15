@@ -1,0 +1,13 @@
+.product__price_view_grid .price__discount {
+    position: absolute;
+    top: 291px;
+    right: 57px;
+}
+.product__price_view_grid .price__old-value-wrapper {
+    display: block;
+    height: 18px;
+    text-align: left;
+}
+.product__price_view_list .price__old-value {
+    top: -6px;
+}
