@@ -11,6 +11,8 @@ export default class extends React.Component {
         super(props);
 
         this.state = {
+            title: 'Computers &amp; Laptops',
+            productCount: 18560,
             views: [ 'grid', 'list' ],
             selectedView: 'grid'
         };
@@ -30,8 +32,8 @@ export default class extends React.Component {
                     <div className="catalog__status">
                         <div className="catalog__status__title">
                             <div className="component component-catalog_title">
-                                <h1 className="catalog__title">Computers &amp; Laptops</h1>
-                                <span className="catalog__quantity">18560 results</span>
+                                <h1 className="catalog__title">{this.state.title}</h1>
+                                <span className="catalog__quantity">{this.state.productCount} results</span>
                             </div>
                         </div>
                         <div className="catalog__status__filters">
