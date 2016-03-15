@@ -2,9 +2,16 @@ import React from 'react';
 
 export default class ProductRating extends React.Component {
     render() {
+        if (!this.props.value) {
+            return null;
+        }
+
         return (
             <div className="product-card__rating">
-                <div className="product-card__rating__stars" title="3.9182" alt="3.9182">
+                <div
+                    className="product-card__rating__stars"
+                    title={this.props.value}
+                    >
                     <div>
                         <span className="icon-svg product-card__rating__icon-star-grey"></span>
                         <span className="icon-svg product-card__rating__icon-star-grey"></span>
@@ -12,7 +19,7 @@ export default class ProductRating extends React.Component {
                         <span className="icon-svg product-card__rating__icon-star-grey"></span>
                         <span className="icon-svg product-card__rating__icon-star-grey"></span>
                     </div>
-                    <div style={{ width: '78.364%' }}>
+                    <div style={{ width: `${this.props.value * 20}%` }}>
                         <span className="icon-svg product-card__rating__icon-star-orange"></span>
                         <span className="icon-svg product-card__rating__icon-star-orange"></span>
                         <span className="icon-svg product-card__rating__icon-star-orange"></span>
@@ -20,7 +27,7 @@ export default class ProductRating extends React.Component {
                         <span className="icon-svg product-card__rating__icon-star-orange"></span>
                     </div>
                 </div>
-                <span className="rating__number">(159 reviews)</span>
+                <span className="rating__number">{`(${this.props.total} reviews)`}</span>
             </div>
         );
     }

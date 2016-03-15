@@ -13,7 +13,7 @@ function getCategoryName(data) {
     return data.filters.find(filter => filter.id === 'category').options[0].label;
 }
 
-export default class extends React.Component {
+export default class App extends React.Component {
     constructor(props) {
         super(props);
 
@@ -59,7 +59,7 @@ export default class extends React.Component {
 
         return (
             <div className="catalog">
-                <Search />
+                <Search placeholder="Search in the products list" />
                 <div className="catalog__main__content">
                     <div className="catalog__status">
                         <div className="catalog__status__title">

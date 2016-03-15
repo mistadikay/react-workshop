@@ -391,7 +391,8 @@ body {
 }
 .product-card .rating__number {
     position: relative;
-    top: -1px;
+    top: -3px;
+    left: 4px;
     color: #4c4849;
 }
 

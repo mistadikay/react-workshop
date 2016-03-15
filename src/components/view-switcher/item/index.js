@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class extends React.Component {
+export default class ViewSwitcherItem extends React.Component {
     handleClick = () => {
         if (this.props.onClick) {
             this.props.onClick(this.props.view);
