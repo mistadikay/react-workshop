@@ -77,7 +77,7 @@ export default class extends React.Component {
                                 />
                         </div>
                     </div>
-                    <ProductList view={this.state.selectedView} />
+                    <ProductList view={this.state.selectedView} data={this.state.data} />
                 </div>
             </div>
         );
