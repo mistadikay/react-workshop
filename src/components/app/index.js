@@ -51,16 +51,16 @@ export default class App extends React.Component {
         // while data is not loaded, show a loader
         if (this.state.data === null) {
             return (
-                <div className="catalog is-loading">
+                <div block="app" mods={{ loading: true }}>
                     Loading... Please wait
                 </div>
             );
         }
 
         return (
-            <div className="catalog">
+            <div block="app">
                 <Search placeholder="Search in the products list" />
-                <div className="catalog__main__content">
+                <div block="app" elem="main-content">
                     <CatalogStatus title={this.state.title} productCount={this.state.productCount}>
                         <ViewSwitcher
                             selected={this.state.selectedView}

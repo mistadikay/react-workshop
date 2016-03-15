@@ -10,18 +10,13 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     line-height: 120%;
 }
-.catalog {
+.app {
     min-width: 700px;
 }
-.catalog.is-loading {
+.app_loading {
     padding: 50px;
     text-align: center;
     font-size: 20px;
-}
-.is-loading {
-    padding: 50px;
-    font-size: 20px;
-    text-align: center;
 }
 /* icons */
 .icon-svg {
@@ -78,7 +73,7 @@ body {
 /*********
  <CATALOG
 *********/
-.catalog__main__content {
+.app__main-content {
     position: relative;
     margin: 10px 20px;
 }
