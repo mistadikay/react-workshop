@@ -1,8 +1,8 @@
-.header__search {
+.search {
     padding: 20px;
     background: #c01f25;
 }
-.header__search-input {
+.search__input {
     display: block;
     padding: 0 10px 0 5px;
     width: 100%;
@@ -13,6 +13,6 @@
 
     -webkit-appearance: none;
 }
-.header__search-input:focus {
+.search__input:focus {
     border-color: #f37022;
 }
