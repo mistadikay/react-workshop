@@ -21,7 +21,7 @@ export default class extends React.Component {
                 <div className="product-card">
                     <a href="http://www.lazada.vn/usb-sandisk-cruzer-edge-cz52-16gb-den-phoi-do-1245208.html">
                         <div className="product-card__img">
-                            <img alt="USB Sandisk Cruzer Edge CZ52 16GB (Đen phối đỏ)" title="USB Sandisk Cruzer Edge CZ52 16GB (Đen phối đỏ)" src="http://vn-live-01.slatic.net/p/o-cung-di-dong-wd-elements-1-5tb-den-1035-2263071-1-catalog_233.jpg?233_resize=1" />
+                            <img alt={product.data.name} src={product.images[0].path} />
                         </div>
                         <div className="product-card__description">
                             {this.renderName(product.data.name)}
@@ -40,7 +40,7 @@ export default class extends React.Component {
             <div className="product-card">
                 <a href="http://www.lazada.vn/usb-sandisk-cruzer-edge-cz52-16gb-den-phoi-do-1245208.html">
                     <div className="product-card__img">
-                        <img alt="USB Sandisk Cruzer Edge CZ52 16GB (Đen phối đỏ)" title="USB Sandisk Cruzer Edge CZ52 16GB (Đen phối đỏ)" src="http://vn-live-01.slatic.net/p/o-cung-di-dong-wd-elements-1-5tb-den-1035-2263071-1-catalog_233.jpg?233_resize=1" />
+                        <img alt={product.data.name} src={product.images[0].path} />
                     </div>
                     <div className="product-card__description">
                         <div className="price-block--list">
