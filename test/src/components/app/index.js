@@ -12,12 +12,12 @@ describe('App', () => {
             wrapper = shallow(<App />);
         });
 
-        it('has correct className', function() {
-            expect(wrapper).to.have.className('app');
+        it('is an app block', function() {
+            expect(wrapper).to.be.block('app');
         });
 
-        it('greets me', () => {
-            expect(wrapper).to.contain('hello world');
+        it('has loader by default', () => {
+            expect(wrapper).to.have.mods({ loading: true });
         });
     });
 });
