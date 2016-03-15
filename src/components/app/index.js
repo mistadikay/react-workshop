@@ -8,6 +8,11 @@ import ViewSwitcher from '~/components/view-switcher';
 import ProductList from '~/components/product-list';
 import Filter from '~/components/filter';
 
+// a little helper to retrieve category name from server data
+function getCategoryName(data) {
+    return data.filters.find(filter => filter.id === 'category').options[0].label;
+}
+
 export default class extends React.Component {
     constructor(props) {
         super(props);
@@ -15,8 +20,8 @@ export default class extends React.Component {
         this.state = {
             // initial data is null
             data: null,
-            title: 'Computers &amp; Laptops',
-            productCount: 18560,
+            title: '',
+            productCount: 0,
             views: [ 'grid', 'list' ],
             selectedView: 'grid'
         };
@@ -30,6 +35,8 @@ export default class extends React.Component {
     // when data from the server is loaded, update local state
     updateData = data => {
         this.setState({
+            title: getCategoryName(data),
+            productCount: data.product_count,
             data
         });
     };
