@@ -18,6 +18,11 @@ body {
     text-align: center;
     font-size: 20px;
 }
+.is-loading {
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+}
 /* icons */
 .icon-svg {
     display: inline-block;

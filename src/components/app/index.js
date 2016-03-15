@@ -48,6 +48,15 @@ export default class extends React.Component {
     }
 
     render() {
+        // while data is not loaded, show a loader
+        if (this.state.data === null) {
+            return (
+                <div className="catalog is-loading">
+                    Loading... Please wait
+                </div>
+            );
+        }
+
         return (
             <div className="catalog">
                 <Search />
