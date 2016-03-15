@@ -23,6 +23,8 @@ export default {
                 loader: 'rebem-layers',
                 query: {
                     layers: [
+                        require('rebem-core-components'),
+                        require('rebem-theme-reset'),
                         {
                             path: path.resolve('src/components/'),
                             files: {
