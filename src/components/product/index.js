@@ -5,8 +5,18 @@ import BuyButton from '~/components/button-buy';
 import Price from '~/components/price';
 
 export default class extends React.Component {
+    renderName(name) {
+        return (
+            <div className="product-card__name-wrap">
+                <span title={name} className="product-card__name big">{name}</span>
+            </div>
+        );
+    }
+
     render() {
-        if (this.props.view === 'grid') {
+        const { product, view } = this.props;
+
+        if (view === 'grid') {
             return (
                 <div className="product-card">
                     <a href="http://www.lazada.vn/usb-sandisk-cruzer-edge-cz52-16gb-den-phoi-do-1245208.html">
@@ -14,9 +24,7 @@ export default class extends React.Component {
                             <img alt="USB Sandisk Cruzer Edge CZ52 16GB (Đen phối đỏ)" title="USB Sandisk Cruzer Edge CZ52 16GB (Đen phối đỏ)" src="http://vn-live-01.slatic.net/p/o-cung-di-dong-wd-elements-1-5tb-den-1035-2263071-1-catalog_233.jpg?233_resize=1" />
                         </div>
                         <div className="product-card__description">
-                            <div className="product-card__name-wrap">
-                                <span className="product-card__name">USB Sandisk Cruzer Edge CZ52 16GB (Đen phối đỏ)</span>
-                            </div>
+                            {this.renderName(product.data.name)}
                             <div className="price-block--grid">
                                 <Price />
                                 <ProductRating />
@@ -39,9 +47,7 @@ export default class extends React.Component {
                             <Price />
                             <BuyButton>BUY NOW</BuyButton>
                         </div>
-                        <div className="product-card__name-wrap">
-                            <span title="Ổ cứng di động WD Elements 1.5TB (Đen)" className="product-card__name">Ổ cứng di động WD Elements 1.5TB (Đen)</span>
-                        </div>
+                        {this.renderName(product.data.name)}
                         <ProductRating />
                         <div className="product-card__describtion--full">
                             <ul className="prd-attributesList">
