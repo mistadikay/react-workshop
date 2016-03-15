@@ -2,8 +2,7 @@ import React from 'react';
 
 import ProductRating from '~/components/product-rating';
 import BuyButton from '~/components/button-buy';
-import Price from '~/components/price';
-import './styles.css';
+import Price from '#price';
 
 export default class Product extends React.Component {
     renderName(name) {

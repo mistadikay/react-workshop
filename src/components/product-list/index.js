@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Product from '~/components/product';
+import Product from '#product';
 
 export default function ProductList(props) {
     return (
