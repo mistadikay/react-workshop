@@ -117,19 +117,6 @@ body {
     vertical-align: middle;
     white-space: nowrap;
 }
-.catalog__status__filters__title {
-    position: relative;
-    left: 9px;
-    display: inline-block;
-    margin-right: 1em;
-    text-transform: none;
-    font-size: 13px;
-}
-.catalog__status__filters .component-dropdown {
-    display: inline-block;
-    margin-right: 27px;
-    width: 158px;
-}
 .catalog__status__filters .component-switcher {
     position: relative;
     display: inline-block;
