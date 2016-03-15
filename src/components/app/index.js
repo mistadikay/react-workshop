@@ -6,7 +6,6 @@ import requestData from '~/../server';
 import Search from '~/components/search';
 import ViewSwitcher from '~/components/view-switcher';
 import ProductList from '~/components/product-list';
-import Filter from '~/components/filter';
 
 // a little helper to retrieve category name from server data
 function getCategoryName(data) {
@@ -69,7 +68,6 @@ export default class App extends React.Component {
                             </div>
                         </div>
                         <div className="catalog__status__filters">
-                            <Filter />
                             <ViewSwitcher
                                 selected={this.state.selectedView}
                                 items={this.state.views}
