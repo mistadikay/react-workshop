@@ -1,6 +1,6 @@
 import React from 'react';
 import { expect } from 'chai';
-import { shallow } from 'enzyme';
+import { shallow } from 'rebem-enzyme';
 
 import App from '#app';
 
