@@ -1,0 +1,36 @@
+.product-card__price {
+    display: inline-block;
+    color: #d4232b;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.product-card__sale {
+    display: inline-block;
+    float: none;
+    margin: 3px 0 0 5px;
+    padding: 3px 5px;
+    background: #d4232b;
+    color: #fff;
+    text-transform: uppercase;
+}
+.grid .product-card__sale {
+    position: absolute;
+    top: 291px;
+    right: 57px;
+}
+.grid .old-price-wrap {
+    display: block;
+    height: 18px;
+    text-align: left;
+}
+.product-card__old-price {
+    position: relative;
+    display: inline-block;
+    color: #4c4849;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.list .product-card__old-price {
+    top: -6px;
+}

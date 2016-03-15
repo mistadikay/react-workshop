@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 function composePrice(amount, currency) {
     return `${amount} ${currency}`;
