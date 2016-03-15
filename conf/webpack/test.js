@@ -20,6 +20,28 @@ export default {
         preLoaders: [
             {
                 test: /\.js$/,
+                loader: 'rebem-layers',
+                query: {
+                    layers: [
+                        require('rebem-core-components'),
+                        require('rebem-theme-reset'),
+                        {
+                            path: path.resolve('src/components/'),
+                            files: {
+                                main: 'index.js',
+                                styles: 'styles.css'
+                            }
+                        }
+                    ],
+                    importFactory: false,
+                    consumers: [
+                        path.resolve('src/'),
+                        path.resolve('test/')
+                    ]
+                }
+            },
+            {
+                test: /\.js$/,
                 include: testingSources,
                 loader: 'babel-istanbul',
                 query: {

@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 
-import App from '~/components/app';
+import App from '#app';
 
 let wrapper = null;
 
