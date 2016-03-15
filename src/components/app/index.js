@@ -11,6 +11,7 @@ export default class extends React.Component {
         super(props);
 
         this.state = {
+            views: [ 'grid', 'list' ],
             selectedView: 'grid'
         };
     }
@@ -29,7 +30,7 @@ export default class extends React.Component {
                         </div>
                         <div className="catalog__status__filters">
                             <Filter />
-                            <ViewSwitcher selected={this.state.selectedView} />
+                            <ViewSwitcher selected={this.state.selectedView} items={this.state.views} />
                         </div>
                     </div>
                     <ProductList view={this.state.selectedView} />
