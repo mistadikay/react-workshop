@@ -17,26 +17,26 @@ export default function Price(props) {
 
         if (discount !== value) {
             return (
-                <span>
-                    <div className="product-card__price">
+                <div block="price">
+                    <div block="price" elem="value">
                         {composePrice(discount, props.currency)}
                     </div>
-                    <div className="product-card__sale">
+                    <div block="price" elem="discount">
                         {composeDiscount(props.discountPercentage)}
                     </div>
-                    <div className="old-price-wrap">
-                        <div className="product-card__old-price">
+                    <div block="price" elem="old-value-wrapper">
+                        <div block="price" elem="old-value">
                             {composePrice(value, props.currency)}
                         </div>
                     </div>
-                </span>
+                </div>
             );
         }
     }
 
     return (
-        <span>
-            <div className="product-card__price">{composePrice(value, props.currency)}</div>
-        </span>
+        <div block="price">
+            <div block="price" elem="value">{composePrice(value, props.currency)}</div>
+        </div>
     );
 }
