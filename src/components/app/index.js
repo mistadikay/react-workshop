@@ -20,9 +20,7 @@ export default class App extends React.Component {
             // initial data is null
             data: null,
             title: '',
-            productCount: 0,
-            views: [ 'grid', 'list' ],
-            selectedView: 'grid'
+            productCount: 0
         };
     }
 

@@ -11,7 +11,12 @@ function rootReducer(state = {}, action) {
     return state;
 }
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, {
+    catalog: {
+        views: [ 'grid', 'list' ],
+        selectedView: 'grid'
+    }
+});
 
 render(
     <Provider store={store}>
