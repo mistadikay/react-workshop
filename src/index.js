@@ -31,6 +31,7 @@ const store = createStore(
     rootReducer,
     {
         catalog: {
+            data: null,
             views: [ 'grid', 'list' ],
             selectedView: 'grid'
         }
