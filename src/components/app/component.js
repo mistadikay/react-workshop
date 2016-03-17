@@ -15,8 +15,7 @@ export default class App extends React.Component {
         super(props);
 
         this.state = {
-            title: '',
-            productCount: 0
+            title: ''
         };
     }
 
@@ -28,8 +27,7 @@ export default class App extends React.Component {
     // when data from the server is loaded, update local state
     updateData = data => {
         this.setState({
-            title: getCategoryName(data),
-            productCount: data.product_count
+            title: getCategoryName(data)
         });
     };
 
@@ -47,7 +45,7 @@ export default class App extends React.Component {
             <div block="app">
                 <Search placeholder="Search in the products list" />
                 <div block="app" elem="main-content">
-                    <CatalogStatus title={this.state.title} productCount={this.state.productCount}>
+                    <CatalogStatus title={this.state.title} productCount={this.props.productCount}>
                         <ViewSwitcher />
                     </CatalogStatus>
                     <ProductList data={this.props.data} />
