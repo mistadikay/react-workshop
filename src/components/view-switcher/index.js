@@ -1,23 +1,11 @@
-import React from 'react';
+import { connect } from 'react-redux';
+import ViewSwitcher from './component.js';
 
-import ViewSwitcherItem from './item';
+const mapStateToProps = state => {
+    return {
+        items: state.catalog.views,
+        selected: state.catalog.selectedView
+    };
+};
 
-export default function ViewSwitcher(props) {
-    return (
-        <div className="component-switcher">
-            <span>View</span>
-            <div className="switchers">
-                {props.items.map(view => (
-                    <ViewSwitcherItem
-                        selected={props.selected === view}
-                        view={view}
-                        onClick={props.onChange}
-                        key={view}
-                        >
-                        {view}
-                    </ViewSwitcherItem>
-                ))}
-            </div>
-        </div>
-    );
-}
+export default connect(mapStateToProps)(ViewSwitcher);

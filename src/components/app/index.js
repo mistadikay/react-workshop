@@ -59,11 +59,7 @@ export default class App extends React.Component {
                 <Search placeholder="Search in the products list" />
                 <div block="app" elem="main-content">
                     <CatalogStatus title={this.state.title} productCount={this.state.productCount}>
-                        <ViewSwitcher
-                            selected={this.state.selectedView}
-                            items={this.state.views}
-                            onChange={this.handleViewChange}
-                            />
+                        <ViewSwitcher onChange={this.handleViewChange}/>
                     </CatalogStatus>
                     <ProductList view={this.state.selectedView} data={this.state.data} />
                 </div>
