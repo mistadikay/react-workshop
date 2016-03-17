@@ -15,6 +15,11 @@ function catalogReducer(catalog = {}, action) {
                 ...catalog,
                 selectedView: action.view
             };
+        case 'DATA_LOADED':
+            return {
+                ...catalog,
+                data: action.data
+            };
         default:
             return catalog;
     }
