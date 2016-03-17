@@ -27,6 +27,7 @@
     "rebem-layers-loader": "^0.5.0",
     "rebem-theme-reset": "^0.2.0",
     "redux": "^3.3.1",
+    "redux-thunk": "^2.0.1",
     "start": "4.0.x",
     "start-babel-cli": "1.0.x",
     "start-clean": "1.0.x",

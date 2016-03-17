@@ -1,7 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import thunkMiddleware from 'redux-thunk';
 
 import App from '#app';
 
@@ -26,12 +27,18 @@ function rootReducer(state = {}, action) {
     };
 }
 
-const store = createStore(rootReducer, {
-    catalog: {
-        views: [ 'grid', 'list' ],
-        selectedView: 'grid'
-    }
-});
+const store = createStore(
+    rootReducer,
+    {
+        catalog: {
+            views: [ 'grid', 'list' ],
+            selectedView: 'grid'
+        }
+    },
+    applyMiddleware(
+        thunkMiddleware
+    )
+);
 
 render(
     <Provider store={store}>
