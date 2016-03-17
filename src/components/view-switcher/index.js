@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import ViewSwitcher from './component.js';
+import { selectView } from '~/actions';
 
 const mapStateToProps = state => {
     return {
@@ -11,7 +12,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onChange(view) {
-            console.log(view);
+            dispatch(selectView(view));
         }
     };
 };
