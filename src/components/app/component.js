@@ -1,7 +1,5 @@
 import React from 'react';
 
-import requestData from '~/../server';
-
 import Search from '~/components/search';
 import ViewSwitcher from '~/components/view-switcher';
 import ProductList from '~/components/product-list';
@@ -24,7 +22,7 @@ export default class App extends React.Component {
 
     // let's pretend it's from the server
     componentDidMount() {
-        requestData(1500).then(this.updateData);
+        this.props.onMount();
     }
 
     // when data from the server is loaded, update local state

@@ -7,6 +7,15 @@ const mapStateToProps = state => {
     };
 };
 
+const mapDispatchToProps = dispatch => {
+    return {
+        onMount() {
+            console.log('mounted and ready to get data');
+        }
+    };
+};
+
 export default connect(
-    mapStateToProps
+    mapStateToProps,
+    mapDispatchToProps
 )(App);
