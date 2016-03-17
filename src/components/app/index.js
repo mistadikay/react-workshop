@@ -38,12 +38,6 @@ export default class App extends React.Component {
         });
     };
 
-    handleViewChange = view => {
-        this.setState({
-            selectedView: view
-        });
-    }
-
     render() {
         // while data is not loaded, show a loader
         if (this.state.data === null) {
@@ -59,7 +53,7 @@ export default class App extends React.Component {
                 <Search placeholder="Search in the products list" />
                 <div block="app" elem="main-content">
                     <CatalogStatus title={this.state.title} productCount={this.state.productCount}>
-                        <ViewSwitcher onChange={this.handleViewChange}/>
+                        <ViewSwitcher />
                     </CatalogStatus>
                     <ProductList data={this.state.data} />
                 </div>

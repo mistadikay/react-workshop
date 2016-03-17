@@ -8,4 +8,15 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps)(ViewSwitcher);
+const mapDispatchToProps = dispatch => {
+    return {
+        onChange(view) {
+            console.log(view);
+        }
+    };
+};
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(ViewSwitcher);
