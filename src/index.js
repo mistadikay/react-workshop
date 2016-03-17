@@ -8,6 +8,8 @@ import App from '#app';
 
 import './assets/styles.css';
 
+const devToolsMiddleware = window.devToolsExtension && window.devToolsExtension();
+
 function catalogReducer(catalog = {}, action) {
     switch(action.type) {
         case 'VIEW_SELECT':
@@ -42,7 +44,8 @@ const store = createStore(
         }
     },
     applyMiddleware(
-        thunkMiddleware
+        thunkMiddleware,
+        devToolsMiddleware
     )
 );
 
