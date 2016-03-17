@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import App from './component.js';
+import { getCatalogData } from '~/actions';
 
 const mapStateToProps = state => {
     return {
@@ -10,7 +11,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onMount() {
-            console.log('mounted and ready to get data');
+            dispatch(getCatalogData());
         }
     };
 };
