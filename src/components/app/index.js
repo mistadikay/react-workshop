@@ -61,7 +61,7 @@ export default class App extends React.Component {
                     <CatalogStatus title={this.state.title} productCount={this.state.productCount}>
                         <ViewSwitcher onChange={this.handleViewChange}/>
                     </CatalogStatus>
-                    <ProductList view={this.state.selectedView} data={this.state.data} />
+                    <ProductList data={this.state.data} />
                 </div>
             </div>
         );

@@ -1,13 +1,10 @@
-import React from 'react';
+import { connect } from 'react-redux';
+import ProductList from './component.js';
 
-import Product from '#product';
+const mapStateToProps = state => {
+    return {
+        view: state.catalog.selectedView
+    };
+};
 
-export default function ProductList(props) {
-    return (
-        <div className={`product_list ${props.view}`}>
-            {props.data.results.map(product => {
-                return <Product product={product} view={props.view} key={product.id} />;
-            })}
-        </div>
-    );
-}
+export default connect(mapStateToProps)(ProductList);
