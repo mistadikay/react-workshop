@@ -7,8 +7,23 @@ import App from '#app';
 
 import './assets/styles.css';
 
+function catalogReducer(catalog = {}, action) {
+    switch(action.type) {
+        case 'VIEW_SELECT':
+            return {
+                ...catalog,
+                selectedView: action.view
+            };
+        default:
+            return catalog;
+    }
+}
+
 function rootReducer(state = {}, action) {
-    return state;
+    return {
+        ...state,
+        catalog: catalogReducer(state.catalog, action)
+    };
 }
 
 const store = createStore(rootReducer, {
