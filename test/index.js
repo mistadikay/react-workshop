@@ -1,8 +1,6 @@
 import chai from 'chai';
 import BEM from 'chai-bem';
 import chaiSpies from 'chai-spies';
-import chaiColors from 'chai-colors';
-import chaiAsPromised from 'chai-as-promised';
 import chaiEnzyme from 'chai-enzyme';
 
 import { ShallowWrapper, ReactWrapper } from 'enzyme';
@@ -17,8 +15,6 @@ chai.use(BEM({
     }
 }));
 chai.use(chaiSpies);
-chai.use(chaiColors);
-chai.use(chaiAsPromised);
 chai.use(chaiEnzyme((wrapper) => {
     return wrapper.wrapper.debug();
 }));

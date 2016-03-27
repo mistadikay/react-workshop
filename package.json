@@ -50,8 +50,6 @@
     "chai": "3.5.x",
     "chai-spies": "0.7.x",
     "chai-bem": "1.3.x",
-    "chai-colors": "1.0.x",
-    "chai-as-promised": "5.2.x",
     "chai-enzyme": "0.4.x",
     "bem-naming": "0.5.x",
     "karma": "0.13.x",
