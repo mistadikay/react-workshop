@@ -9,7 +9,6 @@ import * as webpack from 'start-webpack';
 
 import findPort from './port';
 import stylelint from './stylelint';
-import csscomb from './csscomb';
 
 const minPort = 3000;
 const maxPort = 3010;
@@ -39,15 +38,6 @@ export function tdd() {
         env('test'),
         files('test/**/*.js'),
         karma(require('../conf/karma').dev)
-    );
-}
-
-export function comb() {
-    return start(
-        files([ 'src/**/*.css', 'html/**/*.css' ]),
-        csscomb({
-            config: 'zen'
-        })
     );
 }
 

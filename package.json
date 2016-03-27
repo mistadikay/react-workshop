@@ -38,7 +38,6 @@
     "eslint-plugin-babel": "3.1.x",
     "eslint-plugin-react": "4.2.x",
     "eslint-config-rebem": "1.0.x",
-    "csscomb": "3.1.x",
     "stylelint": "5.2.x",
     "portscanner": "1.0.x",
     "webpack-dev-server": "1.14.x",
