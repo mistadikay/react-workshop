@@ -18,7 +18,7 @@ export function getCatalogData() {
     return function(dispatch) {
         return requestData(1500)
             .then(data => {
-                dispatch(updateData(data))
+                dispatch(updateData(data));
             });
     };
 }

@@ -11,7 +11,7 @@ import './assets/styles.css';
 const devToolsMiddleware = window.devToolsExtension && window.devToolsExtension();
 
 function catalogReducer(catalog = {}, action) {
-    switch(action.type) {
+    switch (action.type) {
         case 'VIEW_SELECT':
             return {
                 ...catalog,
