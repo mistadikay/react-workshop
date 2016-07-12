@@ -3,6 +3,8 @@ React Workshop
 
 These are materials for React Workshop after which you will be able to create and maintain scaleable [React](https://facebook.github.io/react/) applications.
 
+Slides for presentations can be found here: https://slides.com/mistadikay
+
 ## File structure
 
 ```
